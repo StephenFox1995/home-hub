@@ -15,7 +15,6 @@ class TempContainer extends React.Component {
     this.clearInterval(this.state.timer);
   }
 
-
   render() {
     return Temp(this.props);
   }

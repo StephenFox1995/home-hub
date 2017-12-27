@@ -2,16 +2,18 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
-import TempContainer from './containers/TempContainer';
-import temp from './reducers/temp';
+import device from './reducers/device';
 import registerServiceWorker from './registerServiceWorker';
+import App from './App';
 
-
-const store = createStore(temp);
+const initialState = {
+  devices: [],
+};
+const store = createStore(device, initialState);
 
 ReactDOM.render(
   <Provider store={store}>
-    <TempContainer />
+    <App />
   </Provider>
   , document.getElementById('root'),
 );
