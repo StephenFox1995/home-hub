@@ -1,0 +1,55 @@
+.devices {
+  background-color: #F5F5F5;
+  flex-direction: row;
+  display:flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.device {
+  box-shadow: 2px 2px 5px grey;
+  padding: 10px 10px 10px 10px;
+  font-family: "monaco";
+  margin: 10px 10px 10px 10px;
+  border: 1px;
+  border-style: solid;
+  border-radius:3px;
+  background-color:white;
+}
+
+.device-summary {
+  flex-direction: row;
+  display:flex;
+  flex-wrap: wrap;
+  color: #787878;
+  margin-bottom: 10px;
+}
+
+.device-alias {
+  font-weight:bold;
+  font-size:20px;
+  margin:auto;
+  text-align:left;
+}
+
+.power-icon {
+  padding-right:5px;
+}
+
+.device-details {
+  padding-top: 10px;
+  border-style:solid;
+  border-width:1px 0px 0px 0px;
+  flex-direction: column;
+  display:flex;
+  color: #787878
+}
+
+.device-detail {
+  padding-top:2px;
+  padding-bottom: 2px;
+  margin:auto;
+}
+
+

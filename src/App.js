@@ -1,14 +1,12 @@
 import React, { Component } from "react";
-import Header from "./components/Header";
+import Navbar from "./components/Navbar";
 import TempContainer from "./containers/TempContainer";
 import TPLinkContainer from "./containers/TPLinkContainer";
 
 const App = () => (
   <div>
     <div>
-      <Header />
-    </div>
-    <div>
+      <Navbar />
       <TPLinkContainer />
     </div>
   </div>
