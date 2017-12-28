@@ -15,11 +15,15 @@ function* style() {
 
 const styleGenerator = style();
 
-const Devices = ({ devices }) => (
-  <div className="devices">
-    {devices.map(device => Device(device, styleGenerator.next()))}
-  </div>
-);
+const Devices = ({ devices }) => {
+  const deviceList = devices.map(device =>
+    <Device key={device.key} device={device} style={styleGenerator.next()} />);
+  return (
+    <div className="devices">
+      {deviceList}
+    </div>
+  );
+};
 
 Devices.propTypes = {
   devices: PropTypes.element.isRequired,

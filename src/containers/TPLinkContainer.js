@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import Devices from '../components/Devices';
-import openDeviceSock from '../actions/device';
+import { openDeviceSock } from '../actions/device';
 
 class TPLinkContainer extends React.Component {
   componentDidMount() {
