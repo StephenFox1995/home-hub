@@ -1,14 +1,14 @@
 import React from 'react';
-import { Row, Input } from 'react-materialize';
+import Switch from 'material-ui/Switch';
 import '../style/Device.css';
 
-const Device = device => (
-  <div className="device">
+const isSwitchChecked = state => state === 'on';
+
+const Device = (device, style) => (
+  <div className="device" style={style}>
     <div className="device-summary">
       <div className="device-alias">{device.alias}</div>
-      <Row>
-        <Input name="on" type="switch" value="0" />
-      </Row>
+      <Switch checked={isSwitchChecked(device.lightState)} />
     </div>
     <div className="device-details">
       <div className="device-detail">{device.host}</div>
